@@ -1,0 +1,38 @@
+INCLUDE IOSTREAM IOMANIP
+NAMESPACE STD
+
+PROTOTYPE FUNCTIONS
+DisplayMenu
+ProcessMenuChoice
+GetData
+IsPosNeg
+IsOddEven
+FindNumDigits
+FindDigitAtPosition
+DisplayAdditionTable
+DisplayMultiplicationTable
+
+MAIN
+CALL DisplayMenu
+INT MenuChoice
+CALL ProcessMenuChoice(MenuChoice)
+SWITCH MenuChoice
+	IsPosNeg
+	IsOddEven
+	FindNumDigits
+	FindDigitAtPosition
+	DisplayAdditionTable
+	DisplayMultiplicationTable
+
+DisplayMenu
+LIST MENU OPTIONS
+
+ProcessMenuChoice(int MenuChoice)
+CIN MenuChoice
+RETURN MenuChoice
+
+GetData(userint)
+CIN userint
+IF userint 
+IsPosNeg
+CALL GetData(userint)

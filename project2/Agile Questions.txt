@@ -1,0 +1,17 @@
+Jan 26
+4:00 PM
+1. Over the next 30 minutes, I am going to work with Christian to figure out meeting times and try to divide work on the project.
+2. I know we can fairly easily divide the code by splitting up the functions themselves.
+3. I do not know what the project is supposed to be when it's completely put together, so I'm not sure about the layout exactly.
+
+Jan 27
+10:00 AM
+1. Over the next 30 minutes, I am going to start working on the project and try to develop the first few functions I've assigned for myself.
+2. I think I know at least how to implement the DisplayMenu function and ProcessMenuChoice, as well as the logic for IsPosNeg.
+3. I don't know exactly how to organize the functions, especially since I don't understand the overall structure of the project.
+
+Jan 27
+3:00 PM
+1. Over the next 30 minutes, I am going to try to figure out the structure of the project before I get too much farther with the functions.
+2. I know how to do the functions and I have a better understanding of calling by reference.
+3. I am still not sure exactly why or how some of the functions are called by reference, and some of the overall structure of the project.

@@ -2,6 +2,24 @@
 #include <iomanip>
 
 using namespace std;
+void DisplayMenu();
+int ProcessMenuChoice(int);
+int IsPosNeg(int userint = 0)
+
+int main()
+{
+	DisplayMenu();
+	int Selection = 0;
+	ProcessMenuChoice(Selection);
+
+	int userint;
+
+	switch (Selection)
+	{
+	case 1:
+		GetData()
+	}
+}
 
 void DisplayMenu()
 {
@@ -24,11 +42,4 @@ int ProcessMenuChoice(int Selection)
 int IsPosNeg()
 {
 
-}
-
-int main()
-{
-	DisplayMenu();
-	int Selection = 0;
-	return ProcessMenuChoice(Selection);
 }

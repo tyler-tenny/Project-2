@@ -1,20 +1,34 @@
-// project2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+#include <iostream> 
+#include <iomanip>
 
-#include <iostream>
+using namespace std;
+
+void DisplayMenu()
+{
+	cout << "Welcome! \n Please select an option from the menu below. \n\n"; 
+	cout << "(1) IsPosNeg: Tests a number on whether it is positive or negative.";
+	cout << "\n(2) IsOddEven: Tests a number on whether it is odd or even";
+	cout << "\n(3) FindNumDigits: Finds the number of digits in a number";
+	cout << "\n(4) FindDigitAtPosition: Finds the specified digit in a number";
+	cout << "\n(5) DisplayAdditionTable: Displays the addition table for a specified number from 1-10";
+	cout << "\n(6) DisplayMultiplicationTable: Displays the multiplication table for a specified number from 1-10\n";
+}
+
+int ProcessMenuChoice(int Selection)
+{
+	//Collect menu choice
+	cin >> Selection;
+	return Selection;
+}
+
+int IsPosNeg()
+{
+
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	DisplayMenu();
+	int Selection = 0;
+	return ProcessMenuChoice(Selection);
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

@@ -3,43 +3,69 @@
 
 using namespace std;
 void DisplayMenu();
-int ProcessMenuChoice(int);
-int IsPosNeg(int userint = 0)
+void ProcessMenuChoice(int&);
+int GetData(int userint = 0);
+int IsPosNeg(int userint = 0);
 
 int main()
 {
+	//Show options//
 	DisplayMenu();
+	//Collect selected option//
 	int Selection = 0;
 	ProcessMenuChoice(Selection);
 
-	int userint;
+	//Switch for the options//
 
 	switch (Selection)
 	{
 	case 1:
-		GetData()
+		IsPosNeg();
+		break;
+	/*case 2:*/
 	}
+	return Selection;
 }
-
+//Complete
 void DisplayMenu()
 {
 	cout << "Welcome! \n Please select an option from the menu below. \n\n"; 
 	cout << "(1) IsPosNeg: Tests a number on whether it is positive or negative.";
-	cout << "\n(2) IsOddEven: Tests a number on whether it is odd or even";
-	cout << "\n(3) FindNumDigits: Finds the number of digits in a number";
-	cout << "\n(4) FindDigitAtPosition: Finds the specified digit in a number";
-	cout << "\n(5) DisplayAdditionTable: Displays the addition table for a specified number from 1-10";
-	cout << "\n(6) DisplayMultiplicationTable: Displays the multiplication table for a specified number from 1-10\n";
+	cout << "\n\n(2) IsOddEven: Tests a number on whether it is odd or even";
+	cout << "\n\n(3) FindNumDigits: Finds the number of digits in a number";
+	cout << "\n\n(4) FindDigitAtPosition: Finds the specified digit in a number";
+	cout << "\n\n(5) DisplayAdditionTable: Displays the addition table for a specified number from 1-10";
+	cout << "\n\n(6) DisplayMultiplicationTable: Displays the multiplication table for a specified number from 1-10\n\n";
 }
-
-int ProcessMenuChoice(int Selection)
+//Complete
+void ProcessMenuChoice(int& Selection)
 {
-	//Collect menu choice
+	//Collect menu choice//
 	cin >> Selection;
-	return Selection;
+}
+//IsPosNeg is complete in call by value form//
+int IsPosNeg(int userint)
+{
+	userint = GetData(userint);
+	if (userint > 0)
+		cout << userint << " is POSITIVE." << endl;
+	if (userint == 0)
+		cout << userint << " is ZERO." << endl;
+	if (userint < 0)
+		cout << userint << " is NEGATIVE." << endl;
+	return 0;
 }
 
-int IsPosNeg()
-{
 
+//GetData is complete in call by value form//
+int GetData(int userint)
+{
+	cout << "Please enter an integer between one million and negative one million." << endl;
+	cin >> userint;
+	while (userint > 1000000 || userint < -1000000)
+	{
+		cout << "ERROR; Please enter an integer between one million and negative one million." << endl;
+		cin >> userint;
+	}
+	return userint;
 }

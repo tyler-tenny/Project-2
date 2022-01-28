@@ -23,6 +23,7 @@ SWITCH MenuChoice
 	FindDigitAtPosition
 	DisplayAdditionTable
 	DisplayMultiplicationTable
+return 0
 
 DisplayMenu
 LIST MENU OPTIONS
@@ -32,7 +33,36 @@ CIN MenuChoice
 RETURN MenuChoice
 
 GetData(userint)
+COUT ASK FOR INTEGER
 CIN userint
-IF userint 
+WHILE userint > 1000000 || userint < -1000000
+	cout << ERROR PLEASE USE INTEGER BETWEEN ONE MILLION AND NEGATIVE ONE MILLION
+	CIN userint 
+
 IsPosNeg
+CALL GetData(userint)
+IF userint > 0
+	cout << number << IS POSITIVE
+IF userint = 0
+	cout << number << is ZERO
+ELSE cout << number << is NEGATIVE
+
+IsOddEven
+CALL GetData(userint)
+IF userint % 2 > 0
+	cout << number << IS ODD
+IF userint = 0
+	cout << number << is ZERO
+ELSE cout << number << is EVEN
+
+FindNumDigits
+CALL GetData(userint)
+
+FindDigitAtPosition
+CALL GetData(userint)
+
+DisplayAdditionTable(userint)
+CALL GetData(userint)
+
+DisplayMultiplicationTable(userint)
 CALL GetData(userint)

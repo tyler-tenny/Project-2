@@ -15,3 +15,9 @@ Jan 27
 1. Over the next 30 minutes, I am going to try to figure out the structure of the project before I get too much farther with the functions.
 2. I know how to do the functions and I have a better understanding of calling by reference.
 3. I am still not sure exactly why or how some of the functions are called by reference, and some of the overall structure of the project.
+
+Jan 27
+4:30 PM
+1. Over the next 30 minutes, I am going to keep working on the structure of the project and how I am going to organize and call the functions.
+2. I know how to do all of the functions and how to call by reference.
+3. I do not fully understand the details on some of the functions or why they are being called by reference, but I will ask Martha.

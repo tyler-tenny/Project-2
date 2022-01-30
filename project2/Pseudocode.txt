@@ -57,6 +57,12 @@ ELSE cout << number << is EVEN
 
 FindNumDigits
 CALL GetData(userint)
+int digits
+userint = inttemp;
+while (inttemp > 0)
+	inttemp/10;
+	digits++;
+cout "There are " DIGITS "digits in " userint
 
 FindDigitAtPosition
 CALL GetData(userint)

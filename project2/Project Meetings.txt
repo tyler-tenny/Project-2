@@ -1,0 +1,7 @@
+Friday, 5:00 PM
+Christian and I discussed and exchanged the code for DisplayMenu, ProcessMenuChoice, GetData, IsOddEven, and IsPosNeg. We agreed to meet again in 3 days and 
+to work on two more functions each until then.
+
+Monday
+
+Wednesday (in class)

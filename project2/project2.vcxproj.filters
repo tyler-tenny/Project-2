@@ -22,5 +22,7 @@
   <ItemGroup>
     <Text Include="Pseudocode.txt" />
     <Text Include="Agile Questions.txt" />
+    <Text Include="Project Meetings.txt" />
+    <Text Include="Testing Strategy.txt" />
   </ItemGroup>
 </Project>

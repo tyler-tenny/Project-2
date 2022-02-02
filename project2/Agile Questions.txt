@@ -27,3 +27,9 @@ Jan 29
 1. Over the next 30 minutes, I am going to keep filling out pseudocode.
 2. I know how to do pseudocode for all of the functions in the project.
 3. I don't know exactly which functions are intended to be call by reference and call by value, because the project doc isn't up to date yet.
+
+Feb 2
+2:30 PM
+1. Over the next 30 minutes, I am going to be trying to do FindDigitAtPosition.
+2. I know that I can do it if I use the <cmath> header.
+3. I am kind of debating whether or not I should include more headers than necessary.

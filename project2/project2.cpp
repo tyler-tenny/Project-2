@@ -4,7 +4,7 @@
 using namespace std;
 void DisplayMenu();
 void ProcessMenuChoice(int&);
-int GetData(int userint = 0);
+void GetData(int&);
 int IsPosNeg(int userint = 0);
 int IsOddEven(int x = 0);
 int FindNumDigits(int userint = 0);
@@ -31,8 +31,12 @@ int main()
 	case 3:
 		FindNumDigits();
 		break;
+	case 4:
+		FindDigitAtPosition();
+		break;
+	default:
+		return 0;
 	}
-	return 0;
 }
 //Complete - by Tyler
 void DisplayMenu()
@@ -54,7 +58,7 @@ void ProcessMenuChoice(int& Selection)
 //IsPosNeg is complete in call by value form - by Tyler//
 int IsPosNeg(int userint)
 {
-	userint = GetData(userint);
+	GetData(userint);
 	if (userint > 0)
 		cout << userint << " is POSITIVE." << endl;
 	if (userint == 0)
@@ -66,7 +70,7 @@ int IsPosNeg(int userint)
 //IsOddEven complete in call by value form - by Christian
 int IsOddEven(int x)
 {
-	x = GetData(x);
+	GetData(x);
 	if (x % 2 == 0)
 		cout << x << " is even.";
 	else
@@ -76,7 +80,7 @@ int IsOddEven(int x)
 //FindNumDigits complete in call by value form - by Tyler//
 int FindNumDigits(int userint)
 {
-	userint = GetData(userint);
+	GetData(userint);
 	int inttemp = userint;
 	int digits = 0;
 	if (inttemp < 0)
@@ -92,10 +96,39 @@ int FindNumDigits(int userint)
 		cout << userint << " has " << digits << " digits in it.";
 	return 0;
 }
-// FindDigitAtPosition
-// 
-//GetData is complete in call by value form - by Tyler//
-int GetData(int userint)
+//Complete in call by value form - By Tyler
+int FindDigitAtPosition(int userint)
+{
+	GetData(userint);
+	int temp = userint;
+	cout << "Please enter a position number (1 is the ones place, 2 is the tens place, etc.): ";
+	int pos;
+	cin >> pos;
+	if (pos < 1)
+	{
+		cout << endl << "Please enter a positive non-zero integer for position number: ";
+		cin >> pos;
+	}
+	int exp = 1;
+	//divide by 10 until desired digit is least significant digit
+	while (exp < pos)
+	{
+		temp /= 10;
+		exp++;
+	}
+	//modulus by until number is one digit
+	if (temp < 10)
+	{
+		cout << "The digit at position " << pos << " is " << temp << "." << endl;
+	}
+	while (temp >= 10)
+		temp %= 10;
+	cout << "The digit at position " << pos << " is " << temp << "." << endl;
+	return 0;
+}
+
+//GetData is complete in call by reference form - by Tyler//
+void GetData(int& userint)
 {
 	cout << "Please enter an integer between one million and negative one million." << endl;
 	cin >> userint;
@@ -104,5 +137,4 @@ int GetData(int userint)
 		cout << "ERROR; Please enter an integer between one million and negative one million." << endl;
 		cin >> userint;
 	}
-	return userint;
 }

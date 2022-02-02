@@ -66,6 +66,21 @@ cout "There are " DIGITS "digits in " userint
 
 FindDigitAtPosition
 CALL GetData(userint)
+cout enter position number
+int pos, exp, temp
+cin pos
+temp = userint
+exp = 1
+while (exp < pos)
+	divide temp by 10
+	exp++
+if temp < 10
+	print temp as value
+while (temp >= 10)
+	temp %= 10
+print temp as value
+return 0
+
 
 DisplayAdditionTable(userint)
 CALL GetData(userint)

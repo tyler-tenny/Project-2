@@ -33,3 +33,9 @@ Feb 2
 1. Over the next 30 minutes, I am going to be trying to do FindDigitAtPosition.
 2. I know that I can do it if I use the <cmath> header.
 3. I am kind of debating whether or not I should include more headers than necessary.
+
+Feb 3
+4:10 PM
+1. Over the next 30 minutes, I am going to work on compiling the necessary docx file for the project.
+2. I know that I have pretty much everything done and passed to my partner.
+3. I am not sure how exactly to do the diagram or some other related writings.

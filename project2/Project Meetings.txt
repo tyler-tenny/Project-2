@@ -2,6 +2,9 @@ Friday, 5:00 PM
 Christian and I discussed and exchanged the code for DisplayMenu, ProcessMenuChoice, GetData, IsOddEven, and IsPosNeg. We agreed to meet again in 3 days and 
 to work on two more functions each until then.
 
-Monday
+Monday, 5:00 PM
+Christian and I discussed our progress on FindNumDigits, FindDigitAtPosition, DisplayAdditionTable, and DisplayMultiplicationTable. We agreed to meet again in class on Wednesday to
+update each other once again.
 
-Wednesday (in class)
+Wednesday, 4:30 PM
+Christian and I again discussed our ongoing function tasks. We agreed to meet again on Friday to hopefully exchange code and finish the project.
